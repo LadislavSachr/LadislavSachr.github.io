@@ -585,6 +585,21 @@ textarea::-webkit-resizer {
     outline: 2px solid var(--pop-color1);
 }
 
+#form-success-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 80%);
+    color: var(--main-text-color);
+    z-index: 1000;
+}
+
 /* Footer */
 footer{
     color: var(--pop-color2);

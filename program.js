@@ -80,3 +80,44 @@ youtubeButtons.forEach(button => {
         button.classList.remove('active')
     })
 })
+
+/* Form handling */
+const form = document.querySelector(".contact-form")
+const overlay = document.querySelector("#form-success-overlay")
+
+const formDataToJson = formData => { /* Utility function from https://gist.github.com/roshow/dfcb7d3a2f8938607bb8d21f1cd2d468  to parse form fields for data */
+    const entries = formData.entries()
+
+    const dataObj = Array.from(entries).reduce( (data, [key, value]) => {
+        data[key] = value
+        return data
+    }, {})
+
+    return JSON.stringify(dataObj);
+}
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault()
+    const formData = new FormData(form)
+
+    try{
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formDataToJson(formData),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        if(response.ok){
+            form.reset()
+            overlay.style.display = "flex"
+            setTimeout(()=>{
+                overlay.style.display = "none"
+            }, 2000)
+        }else{
+            window.alert('Whoops, something went wrong!')
+        }
+    }catch(e){
+        window.alert('Whoops, something went wrong!')
+    } 
+})

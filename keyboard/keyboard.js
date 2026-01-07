@@ -1,6 +1,8 @@
 import { keyboard } from "./keys.js"
-const root = document.querySelector('#keyboard')
-const text = document.querySelector('#text') 
+const keyboardRoot = document.querySelector('#keyboard')
+const text = document.querySelector('#text')
+const root = document.querySelector('#animation')
+
 const tiles = []
 const hello = 'Hello, World!'
 
@@ -26,7 +28,7 @@ const createKeyboard = () => {
             }
             row.appendChild(element)
         }
-        root.appendChild(row)
+        keyboardRoot.appendChild(row)
     }
 }
 
@@ -58,6 +60,7 @@ const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting){
             createKeyboard()
+            root.classList.add('show')
             writeText()
             observer.unobserve(entry.target)
         }
