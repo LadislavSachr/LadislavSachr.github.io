@@ -46,7 +46,7 @@ const languageButton = document.querySelector("#language-button")
 languageButton.addEventListener('click', () => {
     const hash = window.location.hash
     const lang = languageButton.dataset.href
-    window.location.href = `/${lang}${hash}`
+    window.location.href = `/Portfolio/portfolio_page/${lang}${hash}`
 })
 
 /* Education nav button */
