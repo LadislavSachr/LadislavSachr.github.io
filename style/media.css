@@ -1,0 +1,258 @@
+@media (max-height: 880px){
+    *{
+        font-size: 14px;
+    }
+}
+
+@media (max-height: 600px){
+    #animation{
+        display: none;
+    }
+}
+
+@media (max-width: 1120px){ /* 70 rem for the desktop version - width of the main/header area*/
+    *{
+        font-size: 14px;
+    }
+
+    #header, main{
+        width: 100%;
+    }
+
+    .header-navigation{
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 930px){
+    *{
+        font-size: 12px;
+    }
+
+    #projects-disclaimer{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 790px){
+    *{
+        font-size: 11px;
+        font-size-adjust: 0.39;
+    }
+}
+
+@media (max-width: 740px){ /* Transition to mobile layout */
+    #keyboard{
+        width: 43.5rem;
+    }
+
+    .tile{
+        min-width: 2.6rem;
+        height: 2.6rem;
+        margin: 0.15rem;
+        border-radius: 0.225rem;
+    }
+
+    #about-content{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about-picture{
+        margin-bottom: 2rem;
+    }
+
+    #education-content{
+        flex-direction: column;
+    }
+
+    #education-nav{
+        position: relative;
+        display: flex;
+        margin-bottom: 1rem;
+        border-right: none;
+        padding: 0;
+    }
+
+    #education-nav li{
+        width: 100%;
+        height: 2.5rem;
+        margin-right: 1.5rem;
+    }
+
+    #indicator{
+        display: none;
+    }
+
+    #education-nav li.education-active{
+        border-bottom: 0.2rem solid var(--pop-color1)
+    }
+
+    .education-information-block{
+        height: 22rem;
+    }
+
+    #education-information{
+        padding: 0;
+    }
+
+    .education-information-content-text{
+        flex: 1;
+    }
+
+    .education-information-content h3{
+        margin-bottom: 0.5rem;
+    }
+
+    .education-information-content-tech{
+        height: 4rem;
+    }
+
+    #projects-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects-content *{
+        font-size: 2rem;
+    }
+
+    #projects-content h3{
+        font-size: 2.5rem;
+    }
+
+    .projects-tile{
+        width: 80%;
+    }
+
+    .contact-button-group{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 590px){
+    *{
+        font-size: 10px;
+    }
+
+    .topic{
+        min-height: 100dvh;
+        margin: 0;
+    }
+
+    #keyboard{
+        width: 29.25rem;
+    }
+
+    .tile{
+        min-width: 1.75rem;
+        height: 1.75rem;
+        margin: 0.1rem;
+        border-radius: 0.15rem;
+    }
+
+    .projects-tile{
+        width: 100%;
+    }
+    
+    #projects-content *{
+        font-size: 1.75rem;
+    }
+    
+    .contact-field{
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 740px){ /* Transition to mobile layout - navigation styling */
+    #navigation-main{
+        flex-direction: row-reverse;
+    }
+
+    #header-name{
+        margin-left: 1rem;
+    }
+
+    #navigation-bar-open-button svg{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #navigation-bar-close-button svg{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    #navigation-links{
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        top: -6rem;
+        left: 0;
+        width: 100%;
+        height: 6rem;
+        background-color: var(--main-bg-color);
+        transition: 0.75s ease-out;
+        z-index: 5;
+    }
+
+    #navigation-links li{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navigation-links a{
+        font-size: 1.75rem;
+    }
+
+    #navigation-links label{
+        display: flex;
+        justify-content: end;
+    }
+
+
+    #navigation-bar-open-button, #navigation-bar-close-button{
+        display: block;
+    }
+
+    #navigation-bar-active:checked ~ #navigation-links{
+        top: 0;
+        box-shadow: 0 0 1rem 0.5rem var(--pop-color1-20opacity);
+    }
+
+    #navigation-bar-active:checked ~ #navigation-bar-overlay-button{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+}
+
+@media (max-width: 400px){
+    *{
+        font-size: 9px;
+        font-size-adjust: 0.32;
+    }
+
+    a#header-name{
+        font-size: 2.75rem;
+    }
+
+    li#language *{
+        font-size: 2rem;
+    }
+
+    #projects-content *{
+        font-size: 1.9rem;
+    }
+
+    .education-information-content p{
+        font-size: 1.9rem;
+    }
+}

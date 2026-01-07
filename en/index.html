@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');</style>
     <script src="https://kit.fontawesome.com/56798c0e31.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="public/icon.png">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/keyboard.css">
-    <link rel="stylesheet" href="./style/media.css ">
-    <script type="module" src="./program.js" defer></script>
-    <script type="module" src="./keyboard/keyboard.js" defer></script>
+    <link rel="icon" href="../public/icon.jpg">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/keyboard.css">
+    <link rel="stylesheet" href="../style/media.css ">
+    <script type="module" src="../program.js" defer></script>
+    <script type="module" src="../keyboard/keyboard.js" defer></script>
     <title>Ladislav Sachr</title>
 </head>
 <body>
     <header>
         <div id="header">
             <div class="header-navigation" id="navigation-main">
-                <div><a id="header-name" href="#homepage" title="Úvodní stránka">Ladislav Sachr</a></div>
+                <div><a id="header-name" href="#homepage" title="Homepage">Ladislav Sachr</a></div>
                 <nav id="navigation">
                     <input type="checkbox" id="navigation-bar-active">
                     <label for="navigation-bar-active" id="navigation-bar-overlay-button"></label>
                     <label for="navigation-bar-active" id="navigation-bar-open-button"><i class="fa-solid fa-list"></i></label>
                     <div id="navigation-links">
                         <li><label for="navigation-bar-active" id="navigation-bar-close-button"><i class="fa-solid fa-x"></i></label></li>
-                        <li><a href="#about">O mě</a></li>
-                        <li><a href="#education">Vzdělání</a></li>
-                        <li><a href="#skills">Dovednosti</a></li>
-                        <li><a href="#projects">Projekty</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
-                    </div>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </div> 
                 </nav>
-            </div>
+            </div> 
             <nav class="header-navigation" id="contact-icons">
                 <li id="language">
-                    <button id="language-active" data-href="./index.html" title="Čeština" disabled>CZ</button><span id="line">|</span><button data-href="./en/index.html" title="English" id="language-button">EN</button>
+                    <button id="language-button" data-href="./index.html" title="Čeština">CZ</button><span id="line">|</span><button data-href="./en/index.html" title="English" id="language-active" disabled>EN</button>
                 </li>
                 <li><a href="https://github.com/LadislavSachr" target="_blank" title="Github"><i class="fa-brands fa-square-github"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/LadislavSachr/" target="_blank" title="LinkedIn"><i class="fa-brands fa-square-linkedin"></i></a></li>
@@ -49,55 +49,54 @@
             </div>
             <div id="introduction">
                 <p class="fade-in">
-                    Ahoj, jmenuji se Ladislav Sachr a jsem full-stack web developer se sídlem v Plzni.<br>
+                    Hi, my name is Ladislav Sachr and I'm full-stack web developer based in Pilsen, Czech Republic.<br>
                 </p>
             </div>
             <div id="scrollDown">
-                <p>Poznej mě!</p>
-                <a id="scrollIcon" title="Klikni abys mě poznal!"><i class="fa-solid fa-angles-down"></i></a>
+                <p>Get to know me!</p>
+                <a id="scrollIcon" title="Click to scroll down!"><i class="fa-solid fa-angles-down"></i></a>
             </div>
         </div>
         <div id="information">
             <div class="topic" id="about">
                 <div class="fade-in">
-                    <h2>C:\sachr\<span class="highlight">o-mě</span></h2>
+                    <h2>C:\sachr\<span class="highlight">about</span></h2>
                 </div>
-                
                 <div id="about-content">
                     <div id="about-text">
                         <p class="fade-in"> <!-- About text -->
-                            Jsem bývalý profesionální hráč esportu, který se rozhodl změnit kariéru a přejít na vývoj full-stack aplikací.
-                            Tato neobvyklá cesta mě vybavila cennými dovednostmi v oblasti vedení lidí, komunikace a řešení problémů.
-                            Jako kapitán mezinárodních týmů jsem se naučil rozhodovat pod tlakem a efektivně spolupracovat na dosažení společných cílů.
-                            Nyní se těším na to, že tyto dovednosti využiji při tvorbě smysluplného a lákavého softwaru.
+                            I'm a former professional esports athlete making a career switch into full-stack development. 
+                            This unusual journey equipped me with valuable skills in leadership, communication, and problem-solving. 
+                            As a captain of international teams, I've learned how to make decisions under pressure and collaborate effectively toward shared goals. 
+                            I'm now excited to apply these skills to build meaningful and engaging software.
                         </p>
                     </div>
-                    <div class="fade-in" id="about-picture">
-                        <img src="./public/image.jpg" alt="Obrázek Ladislava Sachra">
+                    <div class="fade-in about" id="about-picture">
+                        <img src="../public/image.jpg" alt="Picture of Ladislav Sachr">
                     </div>
                 </div>
             </div>
             <div class="topic" id="education">
                 <div class="fade-in">
-                    <h2>C:\sachr\<span class="highlight">vzdělání</span></h2>
+                    <h2>C:\sachr\<span class="highlight">education</span></h2>
                 </div>
                 <div class="fade-in" id="education-content">
                     <nav id="education-nav">
-                        <li class="education-active"><button class="education-nav-button" data-education="School">Škola</button></li>
+                        <li class="education-active"><button class="education-nav-button" data-education="School">School</button></li>
                         <li><button class="education-nav-button" data-education="CS50X">CS50x</button></li>
                         <li><button class="education-nav-button" data-education="CS50P">CS50P</button></li>
                         <li><button class="education-nav-button" data-education="Codecademy">Codecademy</button></li>
-                        <li><button class="education-nav-button" data-education="English">Angličtina</button></li>
+                        <li><button class="education-nav-button" data-education="English">English</button></li>
                         <div id="indicator"></div>
                     </nav>
                     <div id="education-information">
                         <div class="education-information-block" data-education="School"> <!-- School -->
                             <div class="education-information-content">
                                 <div>
-                                    <h3>Vyšší odborná škola a Střední průmyslová škola elektrotechnická Plzeň</h3>
+                                    <h3>Training College and Secondary School of Electrical Engineering</h3>
                                     <p>
-                                        Úspěšně jsem odmaturoval v oboru Informační technologie.<br/>
-                                        Během studia jsem také získal následující certifikáty:
+                                        Completed secondary education in field of Information Technology.<br/>
+                                        During this time I've also received these certificates:
                                         <ul>
                                             <li>CCNA Exploration: LAN Switching and Wireless</li>
                                             <li>CCNA Exploration: Routing Protocols and Concepts</li>
@@ -109,14 +108,14 @@
                         <div class="education-information-block" data-education="CS50X"> <!-- CS50X -->
                             <div class="education-information-content">
                                 <div class="education-information-content-text">
-                                    <h3>Harvardova univerzita - Úvod do počítačové vědy</h3>
+                                    <h3>Harvard University - Introduction to Computer Science</h3>
                                     <p>
-                                        Během tohoto kurzu jsem se seznámil s výpočetním myšlením, abstrakcí, algoritmy, datovými strukturami a získal širší porozumnění v oblasti počítačových věd.
-                                        Kurz mi také umožnil vyzkoušet si různé programovací jazyky a rozšířit tak své praktické dovednosti.
+                                        Topics included computational thinking, abstraction, algorithms, data structures, and computer science more broadly.
+                                        The course also introduced me to wide variety of programming languages.
                                     </p>
                                     <div class="education-information-content-text-certificate">
                                         <button class="education-certificate-button">
-                                            <a href="./public/certificates/LadislavSachr_CS50x_certificate.pdf" title="Stáhnout CS50x certifikát" download>
+                                            <a href="../public/certificates/LadislavSachr_CS50x_certificate.pdf" title="Download CS50x certificate" download>
                                                 <svg width="256px" height="256px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--pop-color1)">
                                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M23 1v18h-3v-1h2V2H2v16h8v1H1V1zm-7 2H8v1h8zm-2 3V5h-4v1zm-7 5H3v1h4zm0 2H3v1h4zm-4 3h2v-1H3zm14-3a2 2 0 1 1-2-2 2.002 2.002 0 0 1 2 2zm-1 0a1 1 0 1 0-1 1 1.001 1.001 0 0 0 1-1zm.002-4.293a.965.965 0 0 0 1.32.55 1.08 1.08 0 0 1 1.213.207 1.066 1.066 0 0 1 .21 1.21.966.966 0 0 0 .548 1.324 1.064 1.064 0 0 1 0 2.004.965.965 0 0 0-.549 1.323A1.05 1.05 0 0 1 18 16.816v7.046l-3-2.538-3 2.538v-7.046a1.05 1.05 0 0 1-.744-1.49.965.965 0 0 0-.549-1.324 1.064 1.064 0 0 1 0-2.004.966.966 0 0 0 .549-1.324 1.066 1.066 0 0 1 .209-1.21 1.08 1.08 0 0 1 1.212-.206.965.965 0 0 0 1.32-.551 1.064 1.064 0 0 1 2.005 0zm.998 13v-5.04a.93.93 0 0 0-.998.625 1.064 1.064 0 0 1-2.004 0 .93.93 0 0 0-.998-.625v5.039l2-1.692zm-1.94-4.749a1.967 1.967 0 0 1 1.853-1.308 2.12 2.12 0 0 1 .87.197l.058-.091a1.964 1.964 0 0 1 1.116-2.695v-.122a1.966 1.966 0 0 1-1.116-2.695l-.087-.084a1.965 1.965 0 0 1-2.694-1.117h-.12a1.965 1.965 0 0 1-2.694 1.117l-.087.084a1.966 1.966 0 0 1-1.116 2.695v.122a1.964 1.964 0 0 1 1.116 2.695l.058.09a2.12 2.12 0 0 1 .87-.196 1.967 1.967 0 0 1 1.853 1.308L15 17z"></path><path fill="none" d="M0 0h24v24H0z"></path></g>
                                                 </svg>
@@ -132,14 +131,14 @@
                         <div class="education-information-block" data-education="CS50P"> <!-- CS50P -->
                             <div class="education-information-content">
                                 <div class="education-information-content-text">
-                                    <h3>Harvardova univerzita - Úvod do Pythonu</h3>
+                                    <h3>Harvard University - Introduction to Python</h3>
                                     <p>
-                                        Na rozdíl od CS50x se tento kurz zaměřoval výhradně na programování v jazyku Python.  
-                                        Díky němu jsem se naučil efektivně využívat Python při řešení reálných programátorských problémů.
+                                        Unlike CS50x, this course is solely focused on programming in Python.
+                                        It taught me how to use the language by helping me solve real-world programming problems.
                                     </p>
                                     <div class="education-information-content-text-certificate">
                                         <button class="education-certificate-button">
-                                            <a href="./public/certificates/LadislavSachr_CS50P_certificate.pdf" title="Stáhnout CS50P certifikát" download>
+                                            <a href="../public/certificates/LadislavSachr_CS50P_certificate.pdf" title="Download CS50P certificate" download>
                                                 <svg width="256px" height="256px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--pop-color1)">
                                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M23 1v18h-3v-1h2V2H2v16h8v1H1V1zm-7 2H8v1h8zm-2 3V5h-4v1zm-7 5H3v1h4zm0 2H3v1h4zm-4 3h2v-1H3zm14-3a2 2 0 1 1-2-2 2.002 2.002 0 0 1 2 2zm-1 0a1 1 0 1 0-1 1 1.001 1.001 0 0 0 1-1zm.002-4.293a.965.965 0 0 0 1.32.55 1.08 1.08 0 0 1 1.213.207 1.066 1.066 0 0 1 .21 1.21.966.966 0 0 0 .548 1.324 1.064 1.064 0 0 1 0 2.004.965.965 0 0 0-.549 1.323A1.05 1.05 0 0 1 18 16.816v7.046l-3-2.538-3 2.538v-7.046a1.05 1.05 0 0 1-.744-1.49.965.965 0 0 0-.549-1.324 1.064 1.064 0 0 1 0-2.004.966.966 0 0 0 .549-1.324 1.066 1.066 0 0 1 .209-1.21 1.08 1.08 0 0 1 1.212-.206.965.965 0 0 0 1.32-.551 1.064 1.064 0 0 1 2.005 0zm.998 13v-5.04a.93.93 0 0 0-.998.625 1.064 1.064 0 0 1-2.004 0 .93.93 0 0 0-.998-.625v5.039l2-1.692zm-1.94-4.749a1.967 1.967 0 0 1 1.853-1.308 2.12 2.12 0 0 1 .87.197l.058-.091a1.964 1.964 0 0 1 1.116-2.695v-.122a1.966 1.966 0 0 1-1.116-2.695l-.087-.084a1.965 1.965 0 0 1-2.694-1.117h-.12a1.965 1.965 0 0 1-2.694 1.117l-.087.084a1.966 1.966 0 0 1-1.116 2.695v.122a1.964 1.964 0 0 1 1.116 2.695l.058.09a2.12 2.12 0 0 1 .87-.196 1.967 1.967 0 0 1 1.853 1.308L15 17z"></path><path fill="none" d="M0 0h24v24H0z"></path></g>
                                                 </svg>
@@ -157,12 +156,12 @@
                                 <div class="education-information-content-text">
                                     <h3>Codecademy - Full Stack Engineer</h3>
                                     <p>
-                                        Během tohoto vzdělávacího programu jsem získal praktické zkušenosti s tvorbou front-end i back-end web aplikací a naučil jsem se, jak tyto dvě části propojit do komplexního full-stack řešení.
-                                        Kurz mě také seznámil s různými vývojovými strategiemi a prohloubil mé porozumění datových struktur a algoritmů.
+                                        Through this career path, I gained hands-on experience building front-end/back-end web applications and I learned tointegrate them into full-stack solutions.
+                                        It also taught me about various development strategies and deepened my understanding of data structures and algorithms.
                                     </p>
                                     <div class="education-information-content-text-certificate">
                                         <button class="education-certificate-button">
-                                            <a href="./public/certificates/LadislavSachr_Codecademy_certificate.pdf" title="Stáhnout Codecademy certifikát" download>
+                                            <a href="../public/certificates/LadislavSachr_Codecademy_certificate.pdf" title="Download Codecademy certificate" download>
                                                 <svg width="256px" height="256px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="var(--pop-color1)">
                                                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M23 1v18h-3v-1h2V2H2v16h8v1H1V1zm-7 2H8v1h8zm-2 3V5h-4v1zm-7 5H3v1h4zm0 2H3v1h4zm-4 3h2v-1H3zm14-3a2 2 0 1 1-2-2 2.002 2.002 0 0 1 2 2zm-1 0a1 1 0 1 0-1 1 1.001 1.001 0 0 0 1-1zm.002-4.293a.965.965 0 0 0 1.32.55 1.08 1.08 0 0 1 1.213.207 1.066 1.066 0 0 1 .21 1.21.966.966 0 0 0 .548 1.324 1.064 1.064 0 0 1 0 2.004.965.965 0 0 0-.549 1.323A1.05 1.05 0 0 1 18 16.816v7.046l-3-2.538-3 2.538v-7.046a1.05 1.05 0 0 1-.744-1.49.965.965 0 0 0-.549-1.324 1.064 1.064 0 0 1 0-2.004.966.966 0 0 0 .549-1.324 1.066 1.066 0 0 1 .209-1.21 1.08 1.08 0 0 1 1.212-.206.965.965 0 0 0 1.32-.551 1.064 1.064 0 0 1 2.005 0zm.998 13v-5.04a.93.93 0 0 0-.998.625 1.064 1.064 0 0 1-2.004 0 .93.93 0 0 0-.998-.625v5.039l2-1.692zm-1.94-4.749a1.967 1.967 0 0 1 1.853-1.308 2.12 2.12 0 0 1 .87.197l.058-.091a1.964 1.964 0 0 1 1.116-2.695v-.122a1.966 1.966 0 0 1-1.116-2.695l-.087-.084a1.965 1.965 0 0 1-2.694-1.117h-.12a1.965 1.965 0 0 1-2.694 1.117l-.087.084a1.966 1.966 0 0 1-1.116 2.695v.122a1.964 1.964 0 0 1 1.116 2.695l.058.09a2.12 2.12 0 0 1 .87-.196 1.967 1.967 0 0 1 1.853 1.308L15 17z"></path><path fill="none" d="M0 0h24v24H0z"></path></g>
                                                 </svg>
@@ -179,8 +178,8 @@
                             <div class="education-information-content">
                                 <h3>Cambridge English Qualification - C1 Advanced</h3>
                                 <p>
-                                    I přes to, že jsem posledních pět let pracoval v anglicky mluvícím prostředí, rozhodl jsem se svou jazykovou úroveň potvrdit oficiálním testem.  
-                                    Dosáhl jsem úrovně C1 a certifikát mohu předložit na vyžádání, což dokládá mou schopnost komunikovat a pracovat v anglickém jazyce na profesionální úrovni.
+                                    Although I have worked in English speaking environment for the past five years, I wanted to prove my language proficiency through official test. 
+                                    I've successfully achieved a C1 level and can provide certification upon request.
                                 </p>
                             </div>
                         </div>
@@ -189,7 +188,7 @@
             </div>
             <div class="topic" id="skills">
                 <div class="fade-in">
-                    <h2>C:\sachr\<span class="highlight">dovednosti</span></h2>
+                    <h2>C:\sachr\<span class="highlight">skills</span></h2>
                 </div>
                 <div class="fade-in" id="skills-content">
                     <div class="skills-tile"> <!-- JAVASCRIPT -->
@@ -328,25 +327,25 @@
             </div>
             <div class="topic" id="projects">
                 <div class="fade-in">
-                    <h2>C:\sachr\<span class="highlight">projekty</span></h2>
+                    <h2>C:\sachr\<span class="highlight">projects</span></h2>
                 </div>
-                <p class="fade-in" id="projects-disclaimer">Aplikace E-commerce a To-Do list jsou nasazeny na platformě Render (free verze) a proto může dojít až k 1 minutovém spoždění startu.</p>
+                <p class="fade-in" id="projects-disclaimer">E-commerce and To-Do list applications are deployed on Render (free version) and it might take up to 1 minute for them to go live.</p>
                 <div id="projects-content">
                     <div class="projects-tile fade-in"> <!-- E-commerce -->
                         <div class="projects-tile-info">
                             <div class="projects-tile-header">
                                 <h3>E-commerce</h3>
                                 <div class="projects-tile-icons">
-                                    <a href="https://github.com/LadislavSachr/E-Commerce" target="_blank" title="GitHub repozitář"><i class="fa-brands fa-github"></i></a>
-                                    <a href="https://ecommerce-backend-hsqn.onrender.com" target="_blank" title="Nasazená aplikace"><i class="fa-solid fa-globe"></i></a>
-                                    <button class="project-tile-youtube-button" data-project="ecommerce" data-cover="true" title="Shlédnout demo"><i class="fa-brands fa-youtube"></i></button>
+                                    <a href="https://github.com/LadislavSachr/E-Commerce" target="_blank" title="Github repository"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://ecommerce-backend-hsqn.onrender.com" target="_blank" title="Deployed app"><i class="fa-solid fa-globe"></i></a>
+                                    <button class="project-tile-youtube-button" data-project="ecommerce" data-cover="true" title="Watch demo"><i class="fa-brands fa-youtube"></i></button>
                                 </div>
                             </div>   
                             <div class="projects-tile-content">
                                 <p class="projects-tile-description" data-project="ecommerce">
-                                    E-shop zaměřený na prodej her a herního příslušenství.  
-                                    Uživatel se může zaregistrovat, přihlásit, přidávat položky do košíku, dokončit objednávku a provést platbu prostřednictvím Stripe Checkout.  
-                                    Po přihlášení má uživatel možnost zobrazit historii svých objednávek.
+                                    E-shop that is offering games and gaming peripherals. 
+                                    User is able to register, login, put items into cart, complete order and make payment through Stripe checkout. 
+                                    Logged in user is then able to check his order history afterwards.
                                 </p>
                                 <div class="projects-tile-video">
                                     <iframe src="https://www.youtube.com/embed/Cdmxf9gQA50?si=iAMd4bwLC4v93OLV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -362,15 +361,15 @@
                             <div class="projects-tile-header">
                                 <h3>To-Do list</h3>
                                 <div class="projects-tile-icons">
-                                    <a href="https://github.com/LadislavSachr/To-Do-List" target="_blank" title="GitHub repozitář"><i class="fa-brands fa-github"></i></a>
-                                    <a href="https://todo-backend-xsl5.onrender.com" target="_blank" title="Nasazená aplikace"><i class="fa-solid fa-globe"></i></a>
-                                    <button class="project-tile-youtube-button" data-project="todo" data-cover="true" title="Shlédnout demo"><i class="fa-brands fa-youtube"></i></button>
+                                    <a href="https://github.com/LadislavSachr/To-Do-List" target="_blank" title="Github repository"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://todo-backend-xsl5.onrender.com" target="_blank" title="Deployed app"><i class="fa-solid fa-globe"></i></a>
+                                    <button class="project-tile-youtube-button" data-project="todo" data-cover="true" title="Watch demo"><i class="fa-brands fa-youtube"></i></button>
                                 </div>
                             </div>   
                             <div class="projects-tile-content">
                                 <p class="projects-tile-description" data-project="todo">
-                                    Aplikace se zaměřením na produktivitu, která umožňuje uživateli přidávat a mazat úkoly. Uživatel má možnost je také filtrovat podle ruzných kategorií.<br/>
-O                                   Auth 2.0 je momentálně ve fázi vývoje, přihlášení pomocí Facebook a Google je tedy dostupné pouze pro testovací účty (viz demo).
+                                    Productivity application that allows user to add and delete tasks as well as filter them based on work, school, and home tasks.<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;OAuth 2.0 is in development stage so only test accounts are allowed to login with Facebook and Google.
                                 </p>
                                 <div class="projects-tile-video">
                                     <iframe src="https://www.youtube.com/embed/EMK8l3j6z3I?si=DBKAT8E1nrIlyjf7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -384,17 +383,17 @@ O                                   Auth 2.0 je momentálně ve fázi vývoje, p
                     <div class="projects-tile fade-in"> <!-- Netflix extension -->
                         <div class="projects-tile-info">
                             <div class="projects-tile-header">
-                                <h3>Netflix hodnocení</h3>
+                                <h3>Netflix ratings</h3>
                                 <div class="projects-tile-icons">
-                                    <a href="https://github.com/LadislavSachr/Netflix-extension" target="_blank" title="GitHub repozitář"><i class="fa-brands fa-github"></i></a>
-                                    <button class="project-tile-youtube-button" data-project="netflix" data-cover="true" title="Shlédnout demo"><i class="fa-brands fa-youtube"></i></button>
+                                    <a href="https://github.com/LadislavSachr/Netflix-extension" target="_blank" title="Github repository"><i class="fa-brands fa-github"></i></a>
+                                    <button class="project-tile-youtube-button" data-project="netflix" data-cover="true" title="Watch demo"><i class="fa-brands fa-youtube"></i></button>
                                 </div>
                             </div>   
                             <div class="projects-tile-content">
                                 <p class="projects-tile-description" data-project="netflix">
-                                    Google Chrome rozšíření určené pro Netflix. 
-                                    Využívá OMDb API k získávání hodnocení od IMDb a Rotten Tomatoes pro konkrétní seriál nebo film.  
-                                    Následně upravuje DOM a zobrazuje tato hodnocení přímo pod názvem vybraného titulu.
+                                    Google Chrome extension for Netflix. 
+                                    It uses OMDb API to fetch IMDB and Rotten Tomatoes ratings for specific TV show or film. 
+                                    After that it modifies DOM and shows the rating below title of the chosen media.
                                 </p>
                                 <div class="projects-tile-video">
                                     <iframe src="https://www.youtube.com/embed/NS4iNrpJkYI?si=r04JoT2Ogf2RmJs-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -408,17 +407,17 @@ O                                   Auth 2.0 je momentálně ve fázi vývoje, p
                     <div class="projects-tile fade-in"> <!-- Password -->
                         <div class="projects-tile-info">
                             <div class="projects-tile-header">
-                                <h3>Generátor hesel</h3>
+                                <h3>Password generator</h3>
                                 <div class="projects-tile-icons">
-                                    <a href="https://github.com/LadislavSachr/Password-extension" target="_blank" title="GitHub repozitář"><i class="fa-brands fa-github"></i></a>
-                                    <button class="project-tile-youtube-button" data-project="password" data-cover="true" title="Shlédnout demo"><i class="fa-brands fa-youtube"></i></button>
+                                    <a href="https://github.com/LadislavSachr/Password-extension" target="_blank" title="Github repository"><i class="fa-brands fa-github"></i></a>
+                                    <button class="project-tile-youtube-button" data-project="password" data-cover="true" title="Watch demo"><i class="fa-brands fa-youtube"></i></button>
                                 </div>
                             </div>   
                             <div class="projects-tile-content">
                                 <p class="projects-tile-description" data-project="password">
-                                    Google Chrome rozšíření pro generaci nahodného hesla.
-                                    Uživatel má plnou kontrolu nad tím, jaké znaky a symboly má heslo obsahovat, stejně jako nad jeho délkou.  
-                                    Během generování se síla hesla automaticky vyhodnocuje a uživateli ukazuje.
+                                    Google Chrome extension that generates random password.
+                                    User has control over what characters/symbols password should include as well as it's length.
+                                    Throughout this creation process, extension automatically calculates strength of the possible password.
                                 </p>
                                 <div class="projects-tile-video">
                                     <iframe src="https://www.youtube.com/embed/IySQ6OnvsEY?si=E-xkOI7KdGM5sMM5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -433,37 +432,37 @@ O                                   Auth 2.0 je momentálně ve fázi vývoje, p
             </div>
             <div class="topic" id="contact">
                 <div class="fade-in">
-                    <h2>C:\sachr\<span class="highlight">kontakt</span></h2>
+                    <h2>C:\sachr\<span class="highlight">contact</span></h2>
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/xaqnqnbp" target="_blank" method="POST">
-                    <div class="contact-field fade-in"> <!-- Name input -->
-                        <label class="contact-label" for="name">Vaše jméno</label>
-                        <input class="contact-input" id="name" name="name" title="Vaše jméno" required />
+                <form class="contact-form fade-in" action="https://formspree.io/f/xaqnqnbp" target="_blank" method="POST">
+                    <div class="contact-field"> <!-- Name input -->
+                        <label class="contact-label" for="name">Your Name</label>
+                        <input class="contact-input" id="name" name="name" title="Your name" required />
                     </div>
                     <div class="contact-field fade-in"> <!-- Email input -->
                         <label class="contact-label" for="email">Email</label>
-                        <input class="contact-input" id="email" name="email" title="Váš email" required />
+                        <input class="contact-input" id="email" name="email" title="Your email adress" required />
                         <p class="contact-description">
-                            Toto mi pomůže odpovědět na váš dotaz e-mailem.
+                            This will help me respond to your query via an email.
                         </p>
                     </div>
                     <div class="contact-field fade-in"> <!-- Message textarea -->
-                        <label class="contact-label" for="message">Zpráva</label>
-                        <textarea class="contact-textarea" id="message" name="message" title="Zpráva kterou chcete abych si přečetl" required></textarea>
+                        <label class="contact-label" for="message">Message</label>
+                        <textarea class="contact-textarea" id="message" name="message" title="Message you want me to see" required></textarea>
                         <p class="contact-description">
-                            O čem byste rádi diskutovali?
+                            What would you like to discuss?
                         </p>
                     </div>
                     <div class="contact-button-group fade-in"> <!-- Submit button -->
-                        <button class="contact-button" type="submit">Poslat</button>
+                        <button class="contact-button" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
     </main>
     <footer>
-        Vytvořil a navrhl Ladislav Sachr.<br/>
-        Všechna práva vyhrazena. ©
+        Built and designed by Ladislav Sachr.<br/>
+        All right reserved. ©
     </footer>
 </body>
 </html>

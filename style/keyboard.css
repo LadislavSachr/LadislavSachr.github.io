@@ -1,5 +1,5 @@
 #animation{
-    margin-top: 5rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +23,7 @@
     color: var(--pop-color1);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 4rem;
+    font-size-adjust: 0.55;
     letter-spacing: 0.5rem;
     white-space: pre;
     border-right: 0.5rem solid var(--main-text-color);
